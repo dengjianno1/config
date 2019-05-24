@@ -12,8 +12,8 @@ management:
                 include: refresh,health,info,bus-refresh
 spring:
     rabbitmq:
+        addresses: 192.168.0.47:5673,192.168.0.72:5673
         host: 192.168.0.58
-        port: 5672
         username: admin
         password: hooenergy
         virtualHost: /
