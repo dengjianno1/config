@@ -6,7 +6,15 @@ spring:
    
 #配置中心手动刷新
 management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh,health,info
+    endpoints:
+        web:
+            exposure:
+                include: refresh,health,info,bus-refresh
+spring:
+    rabbitmq:
+        host: 192.168.0.58
+        port: 5672
+        username: admin
+        password: hooenergy
+        virtualHost: /
+        publisherConfirms: true
