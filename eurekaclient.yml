@@ -1,9 +1,6 @@
 server:
   port: 8763
-spring:
-  application:
-    name: eurekaclient
-   
+
 #配置中心手动刷新
 management:
     endpoints:
@@ -18,3 +15,5 @@ spring:
         password: hooenergy
         virtualHost: /
         publisherConfirms: true
+    application:
+      name: eurekaclient
